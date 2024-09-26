@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">  <!-- set the language of the -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calorie Management</title>
+  <link rel="stylesheet" href="styles.css"> <!-- link to the external css file for styling the application -->
+</head>
+<body>
+<div class="container">     <!-- main container for the application -->
+  <h1>Calorie Management Application</h1>
+  <form id="calorie-form">          <!-- Form for adding new calorie items -->
+    <div class="form-group">        <!-- Group for the calorie input field -->
+      <label for="calorie">Calories:</label>           <!-- Label for the calorie input -->
+      <input type="number" id="calorie" placeholder="Calories" required>   <!-- Input for entering the number of calories -->
+    </div>
+    <div class="form-group">  <!-- Group for the category selection -->
+      <label for="category">Category:</label>   <!-- Label for the category dropdown -->
+      <select id="category" required>           <!-- Dropdown for selecting the category -->
+        <option value="BREAKFAST">Breakfast</option> <!-- Option for breakfast category -->
+        <option value="LUNCH">Lunch</option>         <!-- Option for lunch category -->
+        <option value="DINNER">Dinner</option>      <!-- Option for dinner category -->
+        <option value="OTHER">Other</option>        <!-- Option for other categories -->
+      </select>
+    </div>
+    <div class="form-group">  <!-- Group for the description input field -->
+      <label for="description">Description:</label> <!-- Label for the description input -->
+      <input type="text" id="description" placeholder="Description" required>  <!-- Input for entering the description -->
+    </div>
+    <button type="submit">Add Calorie Item</button> <!-- Submit button for the form to add a new calorie item -->
+  </form>
+
+  <div id="report"> <!-- Section for generating and displaying the monthly report -->
+    <h2>Monthly Report</h2>  <!-- Subheading for the report section -->
+    <div class="form-group">   <!-- Group for the month selection -->
+      <label for="report-month">Select Month:</label>  <!-- Label for the month input -->
+      <input type="month" id="report-month">        <!-- Input for selecting the month and year -->
+    </div>
+    <button id="generate-report">Generate Report</button>  <!-- Button to generate the report based on the selected month -->
+    <ul id="report-list"></ul>   <!-- Unordered list to display the generated report items -->
+  </div>
+</div>
+
+<script src="idb.js"></script>  <!-- Link to the IndexedDB library for database operations -->
+<script src="app.js"></script>  <!-- Link to the main application script containing functionality -->
+</body>
+</html>
+
