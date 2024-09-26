@@ -1,3 +1,8 @@
+/*
+ name: matan katsnelson id: 208322248
+ name: Nadav Yeshua id: 318949831
+ name: Refael Rubinov  id: 315790246
+ */
 const idb = {
     // Function to open the IndexedDB database
     openCaloriesDB: function (dbName, version) {

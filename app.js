@@ -1,3 +1,8 @@
+ /*
+ name: matan katsnelson id: 208322248
+ name: Nadav Yeshua id: 318949831
+ name: Refael Rubinov  id: 315790246
+ */
 
 // Add an event listener to the form for handling the submission
 document.getElementById('calorie-form').addEventListener('submit', async (e) => {
